@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-inter);
+}
+
+body {
+  background-color: #FFFFFF !important;
+  color: #000000 !important;
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif), Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.btn-luxury {
+  display: inline-block;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  border: 1px solid #000000;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-luxury:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.btn-outline-luxury {
+  display: inline-block;
+  background-color: transparent;
+  color: #000000;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  border: 1px solid #000000;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-luxury:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+input, textarea {
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  color: #000000;
+  padding: 12px 16px;
+  font-size: 14px;
+  width: 100%;
+}
+
+input:focus, textarea:focus {
+  border-color: #000000;
+  outline: none;
+}
+
+::selection {
+  background: #000000;
+  color: #FFFFFF;
+}
