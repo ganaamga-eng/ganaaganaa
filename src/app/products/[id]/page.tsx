@@ -4,6 +4,21 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Star, Truck, Shield, RotateCcw } from "lucide-react";
 
+export function generateStaticParams() {
+  return [
+    { id: "1" },
+    { id: "2" },
+    { id: "3" },
+    { id: "4" },
+    { id: "5" },
+    { id: "6" },
+    { id: "7" },
+    { id: "8" },
+    { id: "9" },
+    { id: "10" },
+  ];
+}
+
 function formatPrice(price: number) {
   return new Intl.NumberFormat("mn-MN").format(price) + "₮";
 }
