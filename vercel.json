@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/products/:id", "destination": "/products/:id/" },
+    { "source": "/:path*", "destination": "/:path*.html" }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": true
+}
